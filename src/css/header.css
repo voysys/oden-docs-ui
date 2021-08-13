@@ -29,8 +29,37 @@ body {
   padding-left: 1rem;
 }
 
-.navbar-brand .navbar-item {
+/* .navbar-brand .navbar-item:first-child,
+.navbar-brand .navbar-item:first-child a {
+  align-self: center;
+  padding: 0;
   color: var(--navbar-font-color);
+  font-size: calc(22 / var(--rem-base) * 1rem);
+} */
+
+.navbar-brand .navbar-item.logo {
+  align-self: center;
+  padding: 0;
+  margin-left: 1rem;
+  height: calc(0.6 * var(--navbar-height));
+  width: calc(0.6 * var(--navbar-height));
+}
+
+.navbar-brand .navbar-item.logo img {
+  width: inherit;
+}
+
+.navbar-brand .navbar-item.title {
+  align-self: center;
+  color: var(--navbar-font-color);
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  position: relative;
+  top: 0.06em; /* compensate for built-in line height in font */
+  letter-spacing: -0.02em;
+  padding: 0;
+  margin: 0 1rem;
 }
 
 .navbar-brand .navbar-item:first-child {
