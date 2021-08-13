@@ -10,7 +10,7 @@ footer.footer {
 }
 
 .footer a {
-  color: var(--footer-link-font-color);
+  color: #5d5d5d;
 }
 
 .footer-nav h4 {
@@ -20,6 +20,10 @@ footer.footer {
 
 .footer-nav ul li a {
   color: #aaa;
+}
+
+footer {
+  overflow: auto;
 }
 
 footer div.container p {
@@ -38,4 +42,29 @@ footer div.container div.row-full {
 footer div.container div.row-full div.col-third {
   float: left;
   width: 33%;
+}
+
+@media screen and (max-width: 600px) {
+  footer div.container div.row-full {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  footer div.container div.row-full div.col-third {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  footer div.container div.row-full {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  footer div.container div.row-full div.col-third {
+    width: 33%;
+    margin: 0 auto;
+  }
 }
