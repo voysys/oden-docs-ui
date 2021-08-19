@@ -306,7 +306,13 @@ h1.page + aside.toc.embedded {
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: 1;
   transform: translate(-0.5rem, -50%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) no-repeat left center / 2.075em 100%;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    )
+    no-repeat left center / 2.075em 100%;
   border-radius: 0.5em;
   padding: 0.25em 0.075em;
 }
@@ -377,52 +383,52 @@ h1.page + aside.toc.embedded {
 }
 
 /* .doc .admonitionblock .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  padding: 0 0.5rem;
-  height: 1.25rem;
-  line-height: 1;
-  font-weight: var(--admonition-label-font-weight);
-  text-transform: uppercase;
-  border-radius: 0.45rem;
-  transform: translate(-0.5rem, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: calc(15 / var(--rem-base) * 1rem);
+    padding: 0 0.5rem;
+    height: 1.25rem;
+    line-height: 1;
+    font-weight: var(--admonition-label-font-weight);
+    text-transform: uppercase;
+    border-radius: 0.45rem;
+    transform: translate(-0.5rem, -50%);
 } */
 
 /* .doc .admonitionblock.caution .icon {
-  background-color: var(--caution-color);
-  color: var(--caution-on-color);
+    background-color: var(--caution-color);
+    color: var(--caution-on-color);
 }
 
 .doc .admonitionblock.important .icon {
-  background-color: var(--important-color);
-  color: var(--important-on-color);
+    background-color: var(--important-color);
+    color: var(--important-on-color);
 }
 
 .doc .admonitionblock.note .icon {
-  background-color: var(--note-color);
-  color: var(--note-on-color);
+    background-color: var(--note-color);
+    color: var(--note-on-color);
 }
 
 .doc .admonitionblock.tip .icon {
-  background-color: var(--tip-color);
-  color: var(--tip-on-color);
+    background-color: var(--tip-color);
+    color: var(--tip-on-color);
 }
 
 .doc .admonitionblock.warning .icon {
-  background-color: var(--warning-color);
-  color: var(--warning-on-color);
+    background-color: var(--warning-color);
+    color: var(--warning-on-color);
 }
 
 .doc .admonitionblock .icon i {
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
 }
 
 .doc .admonitionblock .icon i::after {
-  content: attr(title);
+    content: attr(title);
 } */
 
 .doc .imageblock {
@@ -921,7 +927,9 @@ h1.page + aside.toc.embedded {
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color), 0 0 0 0.1em var(--body-background) inset;
+  box-shadow:
+    0 1px 0 var(--kbd-border-color),
+    0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
   white-space: nowrap; /* effectively ignores hyphens setting */
@@ -953,11 +961,16 @@ h1.page + aside.toc.embedded {
   hyphens: none;
 }
 
-.doc .menuseq i.caret::before {
-  content: "\203a";
-  font-size: 1.1em;
-  font-weight: var(--body-font-weight-bold);
-  line-height: calc(1 / 1.1);
+/* .doc .menuseq i.caret::before {
+    content: "\203a";
+    font-size: 1.1em;
+    font-weight: var(--body-font-weight-bold);
+    line-height: calc(1 / 1.1);
+} */
+
+.doc .menuseq i.caret {
+  background-image: url(../img/octicons-16.svg#view-chevron-right);
+  margin: 0 -0.25em;
 }
 
 .doc .nowrap {
